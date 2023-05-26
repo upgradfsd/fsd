@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Input Events Example</title>
+</head>
+<body>
+
+<h2>Input Events Example</h2>
+
+<input type="text" id="name" placeholder="Enter your name"><br><br>
+
+<button id="submitBtn">Submit</button>
+
+<p id="result"></p>
+
+<script>
+  // Get the input element and button element
+  var nameInput = document.getElementById("name");
+  var submitButton = document.getElementById("submitBtn");
+  var resultParagraph = document.getElementById("result");
+
+  // Add event listener for the onchange event of the input element
+  nameInput.onchange = function() {
+    // Get the entered name from the input element
+    var name = nameInput.value;
+    
+    // Update the result paragraph with the entered name
+    resultParagraph.textContent = "You entered: " + name;
+  };
+
+  // Add event listener for the onclick event of the button element
+  submitButton.onclick = function() {
+    // Get the entered name from the input element
+    var name = nameInput.value;
+    
+    // Display an alert with the entered name
+    alert("Submitted: " + name);
+  };
+
+  // Add event listener for the onkeydown event of the input element
+  nameInput.onkeydown = function(event) {
+    // Check if the Enter key is pressed
+    if (event.keyCode === 13) {
+      // Get the entered name from the input element
+      var name = nameInput.value;
+      
+      // Update the result paragraph with the entered name
+      resultParagraph.textContent = "You pressed Enter. Name: " + name;
+    }
+  };
+
+  // Add event listener for the onmouseover event of the input element
+  nameInput.onmouseover = function() {
+    // Change the background color of the input element
+    nameInput.style.backgroundColor = "lightblue";
+  };
+
+  // Add event listener for the onmouseout event of the input element
+  nameInput.onmouseout = function() {
+    // Restore the background color of the input element
+    nameInput.style.backgroundColor = "";
+  };
+</script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+
+<!-- -> Event Trigger -> Mouse event , cursor event , key events
+
+-> Event listener -> listerner events  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  id="myLink" rel="stylesheet" href="styles.css">
+
+    <script>
+
+        function changeStyleSheet(){
+
+              var link=  document.getElementById("myLink");
+              link.href="alternatestyle.css"
+        }
+        
+    </script>
+
+</head>
+<body>
+
+
+    <h2>Link Object Example</h2>
+    <p>This is some sample text.</p>
+
+    <button onclick="changeStyleSheet()">change StyleSheet</button>
+
+</body>
+</html>

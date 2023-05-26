@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Link Object Example</title>
+  <link id="myLink" rel="stylesheet" type="text/css" href="styles.css">
+  <script>
+    function changeStylesheet() {
+      // Get the link element using its ID
+      var link = document.getElementById("myLink");
+
+      // Change the href attribute of the link element
+      link.href = "alternate-styles.css";
+    }
+  </script>
+</head>
+<body>
+
+<h2>Link Object Example</h2>
+
+<p>This is some sample text.</p>
+
+<button onclick="changeStylesheet()">Change Stylesheet</button>
+
+</body>
+</html>
