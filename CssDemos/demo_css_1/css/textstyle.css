@@ -1,0 +1,29 @@
+.align-center {
+    text-align: center;
+  }
+
+  .letter-spacing {
+    letter-spacing: 5px;
+  }
+
+  .word-spacing {
+    word-spacing: 10px;
+  }
+
+
+  .color-red {
+    color: red;
+  }
+  .text-decoration {
+    text-decoration: line-through;
+  }
+
+
+  .indentation {
+    text-indent: 50px;
+  } 
+
+  .text-direction {
+    direction: rtl;
+  }
+

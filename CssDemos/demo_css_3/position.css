@@ -1,0 +1,26 @@
+body{
+  font-size: 40px;
+  font-style: normal;
+}
+.parent {
+    background-color: #D3D3D3; 
+    height: 200vh;
+  
+  }
+  
+  .child-one {
+    background-color: #FFC0CB; /* pink */
+    position: sticky; 
+    top:0px
+
+  }
+  
+  .child-two {
+    
+    background-color: #90EE90; /* light green */
+  }
+  
+  .child-three {
+
+    background-color: #DDA0DD; /* plum */
+  }

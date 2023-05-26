@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>My Website</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+		
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		
+		nav {
+			background-color: #f7f7f7;
+			float: left;
+			width: 25%;
+			padding: 20px;
+			box-sizing: border-box;
+			height: 100vh;
+		}
+		
+		nav ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		
+		nav li {
+			margin-bottom: 10px;
+		}
+		
+		nav a {
+			color: #333;
+			text-decoration: none;
+			display: block;
+			padding: 10px;
+			border-radius: 5px;
+			transition: background-color 0.3s;
+		}
+		
+		nav a:hover {
+			background-color: #333;
+			color: #fff;
+		}
+		
+		section {
+			background-color: #f2f2f2;
+			float: left;
+			width: 50%;
+			padding: 20px;
+			box-sizing: border-box;
+			height: 100vh;
+		}
+		
+		section header {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			margin-bottom: 20px;
+		}
+		
+		section article {
+			margin-bottom: 20px;
+		}
+		
+		section footer {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			margin-top: 20px;
+		}
+		
+		aside {
+			background-color: #f7f7f7;
+			float: right;
+			width: 25%;
+			padding: 20px;
+			box-sizing: border-box;
+			height: 100vh;
+		}
+		
+		footer {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+			clear: both;
+		}
+		
+		@media screen and (max-width: 768px) {
+			nav, section, aside {
+				width: 100%;
+				float: none;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>My Website</h1>
+	</header>
+	
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+	
+	<section>
+		<header>
+			<h2>Section Header</h2>
+		</header>
+		
+		<article>
+			<p>Section Content Here</p>
+		</article>
+		
+		<footer>
+			<p>Section Footer Here</p>
+		</footer>
+	</section>
+	
+	<aside>
+		<p>Axside Content Here</p>
+	</aside>
+	
+	<footer>
+		<p>Footer Content Here</p>
+	</footer>
+</body>
+</html>

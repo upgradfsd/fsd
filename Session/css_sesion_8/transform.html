@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+
+<style>
+
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: thistle;
+            height: 100px;
+            font-size: 2rem;
+            width: 30%;
+            color: white;
+            margin: 10%;
+        }
+
+
+        .box{
+            /* transform:scaleX(2) */
+            transition-duration: 2000ms ;
+            transition-property: background,transform;
+
+            
+        }
+
+        .box:hover{
+            background-color: chartreuse;
+            /* transform: rotate(45deg); */
+            transition-timing-function: ease-in;
+        }
+
+</style>
+
+</head>
+
+
+<body>
+    <div class="box">
+            Box
+    </div>
+</body>
+</html>

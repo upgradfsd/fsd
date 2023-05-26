@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Website</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+			line-height: 1.5;
+		}
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.logo {
+			font-size: 24px;
+			font-weight: bold;
+		}
+		nav {
+			display: flex;
+			flex-direction: row;
+		}
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			padding: 10px;
+		}
+		nav a:hover {
+			background-color: #fff;
+			color: #333;
+		}
+		.hero {
+			background-image: url('hero-image.jpg');
+			background-size: cover;
+			background-position: center;
+			height: 500px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			color: #fff;
+			text-align: center;
+		}
+		.hero h1 {
+			font-size: 48px;
+			margin-bottom: 20px;
+		}
+		.hero button {
+			background-color: #fff;
+			color: #333;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 18px;
+			cursor: pointer;
+		}
+		.content {
+			padding: 20px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		.card {
+			background-color: #f4f4f4;
+			border: 1px solid #ccc;
+			box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+			border-radius: 5px;
+			margin-bottom: 20px;
+			flex-basis: calc(33.33% - 20px);
+			padding: 20px;
+			box-sizing: border-box;
+		}
+		.card h2 {
+			font-size: 24px;
+			margin-bottom: 10px;
+		}
+		.card p {
+			font-size: 16px;
+			line-height: 1.5;
+			margin-bottom: 20px;
+		}
+		.sidebar {
+			background-color: #f4f4f4;
+			padding: 20px;
+			box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+			border-radius: 5px;
+			margin-bottom: 20px;
+			flex-basis: calc(25% - 20px);
+			box-sizing: border-box;
+		}
+		.sidebar h2 {
+			font-size: 24px;
+			margin-bottom: 10px;
+		}
+		.footer {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="logo">My Website</div>
+		<nav>
+			<a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Welcome to my website</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, neque nec porttitor fringilla, quam justo maximus dolor, id lobortis tellus quam non massa. Pellentesque vulputate orci eu elit ullamcorper iaculis.</p>
+        <button>Get Started</button>
+    </section>
+    <section class="content">
+        <div class="card">
+            <h2>Card 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, neque nec porttitor fringilla, quam justo maximus dolor, id lobortis tellus quam non massa. Pellentesque vulputate orci eu elit ullamcorper iaculis.</p>
+        </div>
+        <div class="card">
+            <h2>Card 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, neque nec porttitor fringilla, quam justo maximus dolor, id lobortis tellus quam non massa. Pellentesque vulputate orci eu elit ullamcorper iaculis.</p>
+        </div>
+        <div class="card">
+            <h2>Card 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, neque nec porttitor fringilla, quam justo maximus dolor, id lobortis tellus quam non massa. Pellentesque vulputate orci eu elit ullamcorper iaculis.</p>
+        </div>
+        <div class="sidebar">
+            <h2>Latest News</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, neque nec porttitor fringilla, quam justo maximus dolor, id lobortis tellus quam non massa. Pellentesque vulputate orci eu elit ullamcorper iaculis.</p>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2023 My Website</p>
+    </footer>
+</body>
+</html>    

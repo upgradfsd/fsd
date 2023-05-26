@@ -1,0 +1,52 @@
+<!-- 
+
+Styling links based on their state:
+
+:hover selects an element when the user hovers over it.
+:visited selects a link that has been visited by the user.
+:active selects an element that is currently being clicked or activated.
+
+Styling form inputs based on their state:
+
+:focus selects an input element when it has received focus.
+:disabled selects a disabled input element.
+:checked selects a checked radio button or checkbox.
+
+Selecting elements based on their position:
+
+:first-child selects the first child element of its parent.
+:last-child selects the last child element of its parent.
+:nth-child() selects elements based on their position using a formula.
+
+Targeting specific elements during user interactions:
+
+:target selects an element based on its ID, when it is the target of a URL fragment identifier. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Html</title>
+   <style>
+       
+       .container h4:last-of-type{
+            color: red;
+       } 
+   </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <p>First paragraph</p>
+        <h4>Heading 1</h4>
+        <p>Second paragraph</p>
+        <h4>Heading 2</h4>
+    </div>
+      
+    
+
+</body>
+</html>

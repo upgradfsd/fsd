@@ -1,0 +1,9 @@
+The first div with text ‘container1’ 
+consists of an ordered list with these items: ‘HTML‘, ‘CSS‘ and ‘JavaScript‘
+The second div with text ‘container2’ 
+consists of a dropdown, which has three options: ‘upGrad‘, ‘Google‘ and ‘Instagram‘
+
+The third div with text ‘container3’ 
+consists of a paragraph with the text ‘External webpage’
+The fourth div with text ‘container4’ 
+consists of an embedded page, https://www.upgrad.com/, of height 450 and width 700

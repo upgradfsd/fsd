@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+body {
+ background:#9C9F84;
+ margin:0;
+ font-family:verdana,georgia,helevetica,sans-serif;
+ font-size:14px;
+}
+
+#header {
+ background:#5C755E; 
+ margin:10px;
+ height:90px;
+ border-radius:6px;
+}
+
+#navbar {
+ background:#5C755E; 
+ margin:10px;
+ height:35px;
+ border-radius:6px;
+}
+
+.main {
+ background:#E5E4D7;
+ margin-left:10px;
+ margin-right:320px;
+ margin-top:10px;
+ margin-bottom:10px;
+ border-radius:6px;
+ padding:20px;
+ font-size:110%;
+}
+
+/* sideright not in the flow */
+.sideright { 
+ background:#E5E4D7;
+ font-size:105%;
+ padding:20px;/* add right and left = 40px + width = 300px; */
+ width:260px;/* add */
+ float:right; /* when floating always give it a width */
+ border-radius:6px;
+ margin-left:10px;/* add left and right 10px + 10px + 300px = 320px */
+ margin-right:10px;
+ margin-top:0px;
+ margin-bottom:10px; 
+ clear:right; /* float elements */
+}
+
+.imagesidebar{ 
+ width:300px;
+ float:right; 
+ border-radius:6px;
+ margin-left:10px;
+ margin-right:10px;
+ margin-top:0px;
+ margin-bottom:10px; 
+ clear:right; /* float elements */
+ opacity:1.0; /* values are between 0 anx 1.0 */
+ transition:opacity 0.5s ease-in-out;
+}
+
+.imagesidebar:hover {
+ opacity:0.4;
+}
+
+h1 {
+ font-size:120%;
+ color:#CE282E;
+}
+
+h2 {
+ font-size:120%;
+ color:darkblue;
+}
+
+/* footer not rendered in css flow */
+#footer {
+ background:#5c755e;
+ margin:10px;
+ height:60px;
+ clear:both;/* both will protect any other element in flow from elements floated left or right */
+ border-radius:6px;
+}
+</style>
+</head>
+   
+<body>
+<div id="header">
+
+</div/>
+
+<div id="navbar">
+
+</div>
+
+<div class="sideright">
+
+<h2>Blah Randomness Dates</h2>
+
+<p> 11/07 - Lecture on Randomness</p>
+<p> 11/08 - Lecture on Randomness2</p>
+<p> 11/09 - Lecture on Randomness3</p>
+<p> 11/10 - Lecture on Randomness4</p>
+<p> 11/11 - Lecture on Randomness5</p>
+
+</div>
+
+<div class="sideright">
+
+<h2>Blah Randomness Dates2</h2>
+
+<p> 11/07 - Lecture on Randomness</p>
+<p> 11/08 - Lecture on Randomness2</p>
+<p> 11/09 - Lecture on Randomness3</p>
+<p> 11/10 - Lecture on Randomness4</p>
+<p> 11/11 - Lecture on Randomness5</p>
+
+</div>
+
+<div>
+
+<img class="imagesidebar" src="images/download.jpg">
+
+</div>
+
+<div class="main">
+
+<h1>Random - The Blah Text</h1> <! -- don't put width height main content, and sizes accordingly to the content you put in -->
+<p>
+fdsa fsa fds f dsa fd saf dsa fdsa fdsa  fdsa fdsa far-lef
+f dsa f dsa fdsa fdsa fdsaf dsa fdsa fdsa fdsa fdsa fdsa
+f dsaf dsa fdsa fsa fdsa fdsa fdsa fdsa fdsa fdsa fsda fsa
+f dsa fdsa fdsa fds fdsa fdsa fdsa fdsa fdsa fds af dsa fdsa
+f dsa fdsa fdsa fdsa fds afdsa fds fdsa fds fdsa dsf fdsaf saf
+f dsa fdsa fsda fds fdsa fdsa fdsa fsa fdsa fdsa fds af sda
+f dsa fdsaf dsa fsda fdsa fsda fsda fdsa fdsa fdsa fsda fsa fdsa
+f dsa fdsa fdsa fdsa fsda fdsa fsda fsda fsda fdsaf dsaf ds fsa
+f dsa fdsa fdsa fdsa fdsa fdsaf dsa fsda fdsa fdsa fdsa fds
+ fdsaf dsa fdsa fdsa fdsaf dsa fdsa fdsa fdsa fdsa fdsa
+ f dsa fdsaf dsa fdsa fdsa fdsa fdsa fdsa fdsaf sa fsda fas fsa
+  fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsaf dsa
+ </p>
+
+<h1>Randomness - The Blahness Text</h1> <! -- don't put width height main content, and sizes accordingly to the content you put in -->
+<p>
+fdsa fsa fds f dsa fd saf dsa fdsa fdsa  fdsa fdsa far-lef
+f dsa f dsa fdsa fdsa fdsaf dsa fdsa fdsa fdsa fdsa fdsa
+f dsaf dsa fdsa fsa fdsa fdsa fdsa fdsa fdsa fdsa fsda fsa
+f dsa fdsa fdsa fds fdsa fdsa fdsa fdsa fdsa fds af dsa fdsa
+f dsa fdsa fdsa fdsa fds afdsa fds fdsa fds fdsa dsf fdsaf saf
+f dsa fdsa fsda fds fdsa fdsa fdsa fsa fdsa fdsa fds af sda
+f dsa fdsaf dsa fsda fdsa fsda fsda fdsa fdsa fdsa fsda fsa fdsa
+f dsa fdsa fdsa fdsa fsda fdsa fsda fsda fsda fdsaf dsaf ds fsa
+f dsa fdsa fdsa fdsa fdsa fdsaf dsa fsda fdsa fdsa fdsa fds
+fdsaf dsa fdsa fdsa fdsaf dsa fdsa fdsa fdsa fdsa fdsa
+f dsa fdsaf dsa fdsa fdsa fdsa fdsa fdsa fdsaf sa fsda fas fsa
+fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsa fdsaf dsa
+ </p>
+</div>
+
+<div class="main">
+
+<h1>Randomly - The Blah Textness</h1> <! -- don't put width height main content, and sizes accordingly to the content you put in -->
+<p>
+fdsa fsa fds f dsa fd saf dsa fdsa fdsa  fdsa fdsa far-lef
+f dsa f dsa fdsa fdsa fdsaf dsa fdsa fdsa fdsa fdsa fdsa
+f dsaf dsa fdsa fsa fdsa fdsa fdsa fdsa fdsa fdsa fsda fsa
+f dsa fdsa fdsa fds fdsa fdsa fdsa fdsa fdsa fds af dsa fdsa
+f dsa fdsa fdsa fdsa fds afdsa fds fdsa fds fdsa dsf fdsaf saf
+ </p>
+
+<h1>Randomer - The Blahness Ness</h1> <! -- don't put width height main content, and sizes accordingly to the content you put in -->
+<p>
+fdsa fsa fds f dsa fd saf dsa fdsa fdsa  fdsa fdsa far-lef
+f dsa f dsa fdsa fdsa fdsaf dsa fdsa fdsa fdsa fdsa fdsa
+f dsaf dsa fdsa fsa fdsa fdsa fdsa fdsa fdsa fdsa fsda fsa
+f dsa fdsa fdsa fds fdsa fdsa fdsa fdsa fdsa fds af dsa fdsa
+f dsa fdsa fdsa fdsa fds afdsa fds fdsa fds fdsa dsf fdsaf saf
+ </p>
+ 
+<h1>The Random</h1>
+<p>
+fdsa fsa fds f dsa fd saf dsa fdsa fdsa  fdsa fdsa far-lef
+f dsa f dsa fdsa fdsa fdsaf dsa fdsa fdsa fdsa fdsa fdsa
+f dsaf dsa fdsa fsa fdsa fdsa fdsa fdsa fdsa fdsa fsda fsa
+f dsa fdsa fdsa fds fdsa fdsa fdsa fdsa fdsa fds af dsa fdsa
+ </p>
+</div>
+
+<div id="footer">
+
+</div>
+</body>
+   </html>

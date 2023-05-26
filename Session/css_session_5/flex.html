@@ -1,0 +1,43 @@
+
+<!-- /*
+
+Flexbox child items, also known as flex items, have their own set of properties that control their behavior within the flex container. Here are some commonly used properties for flex items:
+
+flex-grow: This property specifies how much the flex item can grow relative to other flex items within the same flex container. By default, it is set to 0, which means the item will not grow. You can set it to a positive value to allow the item to grow proportionally to the remaining space.
+
+flex-shrink: This property specifies how much the flex item can shrink relative to other flex items when there is not enough space available. By default, it is set to 1, which means the item will shrink proportionally. You can set it to 0 to prevent shrinking.
+
+flex-basis: This property sets the initial size of the flex item before any remaining space is distributed. It can be set to a specific length (e.g., 100px) or a percentage (e.g., 50%). The default value is auto, which means the item's size is based on its content.
+
+flex: The flex shorthand property combines the flex-grow, 
+flex-shrink, and flex-basis 
+properties in one declaration. For example, flex: 1 1 auto; sets the item to grow and shrink equally with an initial size based on its content.
+
+align-self: This property overrides the align-items property set on the flex container for a specific flex item. It controls the alignment of the item along the cross axis and can be set to auto, flex-start, flex-end, center, baseline, or stretch.
+*/ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="flex-container">
+
+        <div id="flex-item1">Item 1</div>
+        <div id="flex-item2">Item 2</div>
+        <div id="flex-item3">Item 3</div>
+
+        <!-- <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div> -->
+       
+    </div>
+</body>
+</html>

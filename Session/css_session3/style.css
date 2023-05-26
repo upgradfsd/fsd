@@ -1,0 +1,69 @@
+/* #visible{
+    background-color: aliceblue;
+}
+
+#hidden {
+    background-color: red;
+    visibility:hidden ;
+} */
+
+
+/* #span1{
+    background-color: blue;
+    height: 200px;
+    width: 400px;
+    display: block;
+
+}
+
+#span2 {
+    background-color: red;
+    height: 400px;
+    width: 100px;
+}
+
+#container{
+    background-color: yellowgreen;
+    height: 600px;
+    width: 700px;
+} */
+
+body{
+    font-size: 40px;
+    font-style: normal;
+}
+
+#div2{
+    background-color: yellowgreen;
+    height: 200px;
+    width: 400px;
+    float: left;
+   
+}
+
+#div3{
+    background-color: red;  
+    height: 200px;
+    width: 400px;
+    float: left;
+
+
+}
+
+#div4{
+    background-color: bisque;  
+    height: 200px;
+    width: 400px;
+    float: left;
+
+}
+
+/* #container{
+    background-color: saddlebrown;
+    height: 600px;
+    width: 700px;
+    border: 1px solid;
+}  */
+/* #container{
+    display: flex;
+} */

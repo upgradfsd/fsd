@@ -1,0 +1,6 @@
+Units are of 2 types
+1 Absoulute
+    its fixed as in real file
+2 Relative
+
+    % Relative to parent 

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<h2>Registration Form</h2>
+
+<form id="registrationForm" onsubmit="return validateForm()">
+  <label for="fname">First Name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <span id="fnameError" class="error"></span><br><br>
+
+  <label for="lname">Last Name:</label><br>
+  <input type="text" id="lname" name="lname"><br>
+  <span id="lnameError" class="error"></span><br><br>
+
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email"><br>
+  <span id="emailError" class="error"></span><br><br>
+
+  <label for="password">Password:</label><br>
+  <input type="password" id="password" name="password"><br>
+  <span id="passwordError" class="error"></span><br><br>
+
+  <label for="confirmPassword">Confirm Password:</label><br>
+  <input type="password" id="confirmPassword" name="confirmPassword"><br>
+  <span id="confirmPasswordError" class="error"></span><br><br>
+
+  <input type="submit" value="Register">
+</form>
+
+<script>
+  function validateForm() {
+    let fname = document.forms["registrationForm"]["fname"].value;
+    let lname = document.forms["registrationForm"]["lname"].value;
+    let email = document.forms["registrationForm"]["email"].value;
+    let password = document.forms["registrationForm"]["password"].value;
+    let confirmPassword = document.forms["registrationForm"]["confirmPassword"].value;
+
+    // Validate First Name
+    if (fname === "") {
+      document.getElementById("fnameError").innerHTML = "Please enter your first name.";
+      return false;
+    }
+
+    // Validate Last Name
+    if (lname === "") {
+      document.getElementById("lnameError").innerHTML = "Please enter your last name.";
+      return false;
+    }
+
+    // Validate Email
+    if (email === "") {
+      document.getElementById("emailError").innerHTML = "Please enter your email address.";
+      return false;
+    } else if (!isValidEmail(email)) {
+      document.getElementById("emailError").innerHTML = "Please enter a valid email address.";
+      return false;
+    }
+
+    // Validate Password
+    if (password === "") {
+      document.getElementById("passwordError").innerHTML = "Please enter a password.";
+      return false;
+    } else if (password.length < 6) {
+      document.getElementById("passwordError").innerHTML = "Password must be at least 6 characters long.";
+      return false;
+    }
+
+    // Validate Confirm Password
+    if (confirmPassword === "") {
+      document.getElementById("confirmPasswordError").innerHTML = "Please confirm your password.";
+      return false;
+    } else if (password !== confirmPassword) {
+      document.getElementById("confirmPasswordError").innerHTML = "Passwords do not match.";
+      return false;
+    }
+  }
+
+  function isValidEmail(email) {
+    // Regular expression for email validation
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailPattern.test(email);
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+.container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #f9f9f9;
+  }
+  
+  html, body {
+    background-color: #f9f9f9;
+    margin: 10px;
+  }
+  
+  .container > div:nth-child(1n) {
+    background-color: rgb(126, 122, 122);  /* Light Orange */
+  }
+  
+  .container > div:nth-child(2n) {
+    background-color: #81c784;  /* Light Green */
+  }
+  
+  .container > div:nth-child(3n) {
+    background-color: #9575cd;  /* Light Purple */
+  }
+  
+  .container > div:nth-child(4n) {
+    background-color: rgb(177, 177, 177);  /* Light Amber */
+  }
+  
+  

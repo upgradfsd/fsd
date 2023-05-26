@@ -1,0 +1,36 @@
+body {
+font-family: 'Fira Code', monospace;
+font-size: 50px;
+}
+
+div {
+box-sizing: border-box;
+color: black;
+margin-bottom: 4px;
+padding: 4px;
+width: 400px;
+}
+
+html{
+    font-size: 40px;
+}
+
+.percent {
+font-size: 200%;
+}
+
+.em {
+font-size: 1em;
+}
+
+.rem {
+font-size: 1rem;
+}
+
+.ch {
+font-size: 1ch;
+}
+
+.ex {
+font-size: 1ex;
+}

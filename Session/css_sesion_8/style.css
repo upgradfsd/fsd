@@ -1,0 +1,14 @@
+.container{
+    perspective: 1000px;
+}
+
+.card{
+    width: 200px;
+    height: 300px;
+    background-color: aqua;
+    transform: rotateY(45deg) scale(0.8);
+}
+
+.card:hover{
+    transform: rotateY(0deg) scale(1);
+}

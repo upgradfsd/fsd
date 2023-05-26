@@ -1,0 +1,18 @@
+.percent{
+    font-size: 200%;
+}
+
+body{
+    font-size: 20px;
+}
+.em{
+    font-size: 3em;
+}
+
+html{
+    font-size: 20px;
+
+}
+.rem{
+    font-size: 1rem;
+}

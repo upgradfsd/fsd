@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container {
+            perspective: 1000px;
+        }
+
+        .card {
+            width: 200px;
+            height: 300px;
+            background-color: blue;
+            transform: rotateY(45deg) scale(0.8);
+            transition: transform 0.5s ease;
+        }
+
+        .card:hover {
+            transform: rotateY(0deg) scale(1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card"></div>
+    </div>
+</body>
+</html>

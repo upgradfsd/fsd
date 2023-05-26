@@ -1,0 +1,43 @@
+img {
+
+    height: 60px;
+    width: 100px;
+}
+
+h2,p {
+    font-style: italic;
+}
+
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F8F8F8;
+
+}
+
+.card {
+
+    background-color: #FFF;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+#monthly-earnings {
+    background-color: #F8F8F8;
+}
+
+#revenue {
+    background-color: #daeeef;
+}
+
+#outofstock {
+    background-color: #cce35b;
+}
+
+.card p {
+    color: #999;
+    font-size: 18px;
+}

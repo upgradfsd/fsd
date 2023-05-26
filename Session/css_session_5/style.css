@@ -1,0 +1,43 @@
+* {
+    font-size: 40px;
+    font-style: normal;
+    margin: 0;
+}
+
+#flex-item1{
+        background-color: saddlebrown;
+
+}
+
+#flex-item2{
+    background-color: seagreen;
+    /* flex-basis: 700px; */
+    flex: 1 1 auto
+    
+}
+
+#flex-item3{
+    background-color: yellow;
+}
+
+/* .flex-item{
+    background-color: seagreen;
+    border: 1px solid;
+    flex-grow: 1;
+} */
+
+.flex-container{
+    border: 2px solid;
+    display: flex;
+    /* border-right-color: yellowgreen ;
+    border-right: 10px solid; */
+   
+    /* flex-wrap: wrap;
+    justify-content:center ; */
+    /* flex-direction: row-reverse;
+    flex-wrap: wrap; */
+
+    /* flex-flow: row-reverse wrap; */
+
+   
+}

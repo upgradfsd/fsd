@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+            .container h4:first-of-type {
+            color: blue;
+            }
+
+        a:hover {
+            color: red;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        a:active {
+        color: green;
+        }
+
+            input:focus {
+    border: 2px solid blue;
+    }
+
+    input:disabled {
+    opacity: 0.5;
+    }
+
+    input[type="checkbox"]:checked + label {
+    color: green;
+    }
+
+
+    .container:empty {
+        background-color: lightgray;
+    }
+
+            .list li:first-child {
+        color: red;
+        }
+
+        .list li:last-child {
+        color: blue;
+        }
+
+        .list li:nth-child(2n) {
+        background-color: lightgray;
+        }
+
+        .container :not(p) {
+  color: red;
+}
+
+
+    </style>
+</head>
+<body>
+    <a href="#">Normal Link</a>
+    <a href="#" class="visited-link">Visited Link</a>
+    <a href="#" class="active-link">Active Link</a>
+
+
+    <input type="text" placeholder="Enter your name">
+    <input type="text" placeholder="Enter your email" disabled>
+    <input type="checkbox" id="checkbox1">
+    <label for="checkbox1">Checkbox 1</label>
+    <input type="checkbox" id="checkbox2" checked>
+    <label for="checkbox2">Checkbox 2</label>
+
+    <div class="container">
+        <h2>Heading</h2>
+        <p>Some content</p>
+        <div></div>
+        <span></span>
+      </div>
+      <ul class="list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+      
+
+      <div class="container">
+        <p>First paragraph</p>
+        <h4>Heading 1</h4>
+        <p>Second paragraph</p>
+        <h4>Heading 2</h4>
+      </div>
+
+      <div class="container">
+        <p>Paragraph 1</p>
+        <h2>Heading 1</h2>
+        <p>Paragraph 2</p>
+        <h2>Heading 2</h2>
+      </div>
+      
+      
+
+</body>
+</html>

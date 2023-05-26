@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Selector Demo</title>
+    <style>
+      .card {
+        background-color: #f2f2f2;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+        margin: 20px;
+        padding: 20px;
+      }
+
+      .card-2 {
+        background-color: #f7dc6f;
+      }
+
+      #card-1 {
+        background-color: #b2b2b2;
+      }
+
+      h2[data-card="3"] {
+        color: #d9534f;
+      }
+
+      .card p {
+        font-size: 18px;
+      }
+
+      .card > h2 {
+        text-transform: uppercase;
+      }
+
+      .card h2 + p {
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card" id="card-1">
+      <h2>Card 1</h2>
+      <p>This is the first card.</p>
+    </div>
+    <div class="card card-2">
+      <h2>Card 2</h2>
+      <p>This is the second card.</p>
+    </div>
+    <div class="card">
+      <h2 data-card="3">Card 3</h2>
+      <p>This is the third card.</p>
+    </div>
+  </body>
+</html>
