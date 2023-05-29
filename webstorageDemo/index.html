@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Web Storage Example</title>
+  <style>
+    #output {
+      padding: 10px;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+
+    #input {
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 5px 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2>Web Storage Example</h2>
+
+  <div id="output"></div>
+
+  <input type="text" id="input" placeholder="Enter a value" />
+  <button onclick="saveValue()">Save Value</button>
+
+  <script>
+    function saveValue() {
+      var value = document.getElementById('input').value;
+      localStorage.setItem('storedValue', value);
+      displayValue();
+    }
+
+    function displayValue() {
+      var storedValue = localStorage.getItem('storedValue');
+      var outputDiv = document.getElementById('output');
+      outputDiv.innerHTML = 'Stored Value: ' + storedValue;
+    }
+
+    // Display stored value on page load
+    displayValue();
+  </script>
+</body>
+</html>

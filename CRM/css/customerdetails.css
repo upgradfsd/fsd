@@ -1,0 +1,42 @@
+    /* Reset some default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Set background color and text color */
+    body {
+      background-color: #f2f2f2;
+      color: #333;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Main container */
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Header section */
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    /* Customer details section */
+    .customer-details {
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    strong {
+      font-weight: bold;
+    }

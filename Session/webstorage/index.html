@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Storage</title>
+</head>
+<body>
+
+    <h2>Web Storage Example</h2>
+
+    <div id="items">
+        <!-- <div class="item">
+                <button></button><input type="text"> <span></span>
+
+        </div> -->
+    </div>
+
+    <div>
+        <input type="text" id="keyInput" placeholder="Enter the key">
+        <input type="text" id="keyValue" placeholder="Enter the value">
+        <button onclick="saveItem()">Save Item</button>
+    </div>
+
+<script>
+    function saveItem(){
+        let key=document.getElementById("keyInput").value;
+        let value=document.getElementById("keyValue").value;
+        
+        if(key && value){
+            localStorage.setItem(key,value);
+            displayItems();
+            clearInputs();
+        }
+        
+
+    }
+
+    function deleteItem(key){
+            localStorage.removeItem(key);
+            displayItems();
+            
+    }
+
+    function displayItems(){
+        let itemsDiv=document.getElementById("items");
+        itemsDiv.innerHTML='';
+
+        for(var i=0; i<localStorage.length;i++){
+            let k=localStorage.key(i);
+            let value= localStorage.getItem(k);
+
+            let itemDiv = document.createElement('div')
+            itemDiv.className='item'
+
+            var deleteButton = document.createElement('button');
+            deleteButton.textContent = 'Delete';
+            deleteButton.className = 'delete';
+             deleteButton.setAttribute('onclick', 'deleteItem("' + k + '")');
+
+            let keyInput = document.createElement('input')
+            keyInput.type='text'
+            keyInput.value=k;
+            keyInput.setAttribute('readonly',true)
+
+            var valueSpan = document.createElement('span');
+            valueSpan.className = 'item-value';
+            valueSpan.textContent = value;
+
+
+            itemDiv.appendChild(deleteButton);
+            itemDiv.appendChild(keyInput);
+            itemDiv.appendChild(valueSpan);
+
+            itemsDiv.appendChild(itemDiv);
+            
+
+        }
+
+        function clearInputs() {
+            document.getElementById('keyInput').value = '';
+            document.getElementById('valueInput').value = '';
+        }
+
+        displayItems()
+
+    }
+
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRM Application</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>CRM Application</h1>
+    </header>
+
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/customer-list.html">Customer List</a></li>
+      </ul>
+    </nav>
+
+    <form id="customer-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter name" required>
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter email" required>
+      
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" placeholder="Enter phone number">
+      
+        <label for="message">Message:</label>
+        <textarea id="message" placeholder="Enter message"></textarea>
+      
+        <button type="submit">Submit</button>
+      </form>
+      
+  </div>    
+
+  <script src="js/script.js"></script>
+</body>
+</html>

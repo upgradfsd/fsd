@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Session Storage Example</title>
+  <style>
+    .item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .item input[type="text"] {
+      margin-right: 10px;
+    }
+
+    .item button {
+      padding: 5px 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .item button.delete {
+      background-color: #f44336;
+    }
+
+    .item .item-value {
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Session Storage Example</h2>
+
+  <div id="items"></div>
+
+  <div>
+    <input type="text" id="keyInput" placeholder="Enter a key" />
+    <input type="text" id="valueInput" placeholder="Enter a value" />
+    <button onclick="saveItem()">Save Item</button>
+  </div>
+
+  <script>
+    function saveItem() {
+      var key = document.getElementById('keyInput').value;
+      var value = document.getElementById('valueInput').value;
+
+      if (key && value) {
+        sessionStorage.setItem(key, value);
+        displayItems();
+        clearInputs();
+      }
+    }
+
+    function deleteItem(key) {
+      sessionStorage.removeItem(key);
+      displayItems();
+    }
+
+    function displayItems() {
+      var itemsDiv = document.getElementById('items');
+      itemsDiv.innerHTML = '';
+
+      for (var i = 0; i < sessionStorage.length; i++) {
+        var key = sessionStorage.key(i);
+        var value = sessionStorage.getItem(key);
+
+        var itemDiv = document.createElement('div');
+        itemDiv.className = 'item';
+
+        var deleteButton = document.createElement('button');
+        deleteButton.textContent = 'Delete';
+        deleteButton.className = 'delete';
+        deleteButton.setAttribute('onclick', 'deleteItem("' + key + '")');
+
+        var keyInput = document.createElement('input');
+        keyInput.type = 'text';
+        keyInput.value = key;
+        keyInput.setAttribute('readonly', true);
+
+        var valueSpan = document.createElement('span');
+        valueSpan.className = 'item-value';
+        valueSpan.textContent = value;
+
+        itemDiv.appendChild(deleteButton);
+        itemDiv.appendChild(keyInput);
+        itemDiv.appendChild(valueSpan);
+
+        itemsDiv.appendChild(itemDiv);
+      }
+    }
+
+    function clearInputs() {
+      document.getElementById('keyInput').value = '';
+      document.getElementById('valueInput').value = '';
+    }
+
+    // Display stored items on page load
+    displayItems();
+  </script>
+</body>
+</html>
